@@ -6,18 +6,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
-public  abstract class BaseTest {
+import org.testng.annotations.Listeners;
+@Listeners(Result.class)
+public  abstract class BaseTest implements IAutoConst{
 	public WebDriver driver;
-	public static String key="webdriver.chrome.driver";
-	static {
-		System.setProperty(key, "./driver/chromedriver.exe");
+	public String url=Utility.getPropertyValue(CONFIG_PATH, "URL");
+	String ITO=Utility.getPropertyValue(CONFIG_PATH, "ITO");
+	public long duration=Long.parseLong(ITO);
+		static {
+		System.setProperty(key, value);
 	}
 	@BeforeMethod
 	public void openApplication() {
 		driver=new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.get("https://facebook.com");
+		driver.manage().timeouts().implicitlyWait(duration, TimeUnit.SECONDS);
+		driver.get(url);
 	}
 	@AfterMethod
 	public void closeApplication() {

@@ -9,6 +9,10 @@ import org.testng.annotations.BeforeMethod;
 
 public  abstract class BaseTest {
 	public WebDriver driver;
+	public static String key="webdriver.chrome.driver";
+	static {
+		System.setProperty(key, "./driver/chromedriver.exe");
+	}
 	@BeforeMethod
 	public void openApplication() {
 		driver=new ChromeDriver();

@@ -7,8 +7,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.Reporter;
 
-public class Result implements ITestListener,IAutoConst{
+public class Result  implements ITestListener,IAutoConst
+{
 	public static int passcount=0,failcount=0;
 	@Override
 	public void onTestStart(ITestResult result) {
@@ -30,6 +32,7 @@ public class Result implements ITestListener,IAutoConst{
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
 		failcount++;
+		
 		
 	}
 
@@ -54,7 +57,7 @@ public class Result implements ITestListener,IAutoConst{
 	@Override
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
-		Utility.writeToxml(INPUT_PATH, "sheet1", passcount, failcount);
+		Utility.writeToxml(RESULT_PATH, "sheet1", passcount, failcount);
 		
 	}
 

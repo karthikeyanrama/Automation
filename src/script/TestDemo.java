@@ -1,5 +1,6 @@
 package script;
 
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
@@ -13,10 +14,11 @@ public class TestDemo extends BaseTest {
 		Reporter.log("Data:"+data,true);
 		
 		int r=Utility.getXLRowcount(INPUT_PATH, "sheet1");
-		Reporter.log("Row"+r+true);
+		Reporter.log("Row"+r,true);
 		
-		String p=Utility.getphoto(driver, PHOTO_PATH);
-		Reporter.log("Photo"+p+true);
+		Assert.fail();
+		//String p=Utility.getphoto(driver, PHOTO_PATH);
+		//Reporter.log("Photo"+p,true);
 	}
 
 }

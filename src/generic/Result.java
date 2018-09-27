@@ -1,5 +1,9 @@
 package generic;
 
+import java.io.File;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -16,6 +20,9 @@ public class Result implements ITestListener,IAutoConst{
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
 		passcount++;
+
+				
+		
 		
 	}
 
@@ -47,7 +54,7 @@ public class Result implements ITestListener,IAutoConst{
 	@Override
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
-		Utility.writeToxml(path, "sheet1", passcount, failcount);
+		Utility.writeToxml(INPUT_PATH, "sheet1", passcount, failcount);
 		
 	}
 

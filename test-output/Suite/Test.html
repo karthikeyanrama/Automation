@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 27 15:38:09 IST 2018</td>
+<td>Started on:</td><td>Fri Sep 28 13:54:42 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>125 seconds (125163 ms)</td>
+<tr><td>Total time:</td><td>142 seconds (142011 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,22 +76,18 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='script.TestDemo.testA()'><b>testA</b><br>Test class: script.TestDemo<br/>
-<a href="#Output-1396707789" onClick='toggleBox("Output-1396707789", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-807322507" onClick='toggleBox("Output-807322507", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1396707789" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1396707789">
+<a href="#Output-807322507" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-807322507">
 Data:username<br/>
 Row1<br/>
 </div>
 </td>
 <td><div><pre>java.lang.AssertionError: null
 	at script.TestDemo.testA(TestDemo.java:19)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1396707789", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1396707789'><pre>java.lang.AssertionError: null
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace807322507", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace807322507'><pre>java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:96)
 	at org.testng.Assert.fail(Assert.java:103)
 	at script.TestDemo.testA(TestDemo.java:19)
@@ -108,16 +104,41 @@ Row1<br/>
 	at org.testng.TestRunner.privateRun(TestRunner.java:648)
 	at org.testng.TestRunner.run(TestRunner.java:505)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>15</td>
-<td>script.TestDemo@343f4d3d</td></tr>
+<td>12</td>
+<td>script.TestDemo@754ba872</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='script.TestDemo2.testA()'><b>testA</b><br>Test class: script.TestDemo2<br/>
+<a href="#Output-48305285" onClick='toggleBox("Output-48305285", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-48305285" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-48305285">
+testA<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>script.TestDemo2@146ba0ac</td></tr>
 </table><p>
 </body>
 </html>

@@ -8,15 +8,15 @@
       <![CDATA[Row1]]>
     </line>
     <line>
-      <![CDATA[Test:testAis failed @photo is./photo/Thu Sep 27 15_40_10 IST 2018.png]]>
+      <![CDATA[Test:testAis failed @photo is./photo/Sat Sep 29 10_53_13 IST 2018.png]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="125163" started-at="2018-09-27T10:08:09Z" finished-at="2018-09-27T10:10:14Z">
+  <suite name="Default suite" duration-ms="65959" started-at="2018-09-29T05:22:08Z" finished-at="2018-09-29T05:23:14Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="125163" started-at="2018-09-27T10:08:09Z" finished-at="2018-09-27T10:10:14Z">
+    <test name="Default test" duration-ms="65959" started-at="2018-09-29T05:22:08Z" finished-at="2018-09-29T05:23:14Z">
       <class name="script.TestDemo">
-        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.TestDemo@343f4d3d]" name="openApplication" is-config="true" duration-ms="105121" started-at="2018-09-27T10:08:09Z" finished-at="2018-09-27T10:09:54Z">
+        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.TestDemo@42e26948]" name="openApplication" is-config="true" duration-ms="58898" started-at="2018-09-29T05:22:08Z" finished-at="2018-09-29T05:23:07Z">
           <params>
             <param index="0">
               <value>
@@ -32,7 +32,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="FAIL" signature="testA()[pri:0, instance:script.TestDemo@343f4d3d]" name="testA" duration-ms="15807" started-at="2018-09-27T10:09:54Z" finished-at="2018-09-27T10:10:10Z">
+        <test-method status="FAIL" signature="testA()[pri:0, instance:script.TestDemo@42e26948]" name="testA" duration-ms="5655" started-at="2018-09-29T05:23:07Z" finished-at="2018-09-29T05:23:13Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -55,13 +55,18 @@ at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
 at org.testng.TestRunner.run(TestRunner.java:505)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.util.concurrent.FutureTask.run(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
@@ -74,21 +79,21 @@ at java.lang.Thread.run(Unknown Source)
             </line>
           </reporter-output>
         </test-method> <!-- testA -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.TestDemo@343f4d3d]" name="closeApplication" is-config="true" duration-ms="3945" started-at="2018-09-27T10:10:10Z" finished-at="2018-09-27T10:10:14Z">
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.TestDemo@42e26948]" name="closeApplication" is-config="true" duration-ms="1297" started-at="2018-09-29T05:23:13Z" finished-at="2018-09-29T05:23:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testA status=FAILURE method=TestDemo.testA()[pri:0, instance:script.TestDemo@343f4d3d] output=Data:username]]]>
+                <![CDATA[[TestResult name=testA status=FAILURE method=TestDemo.testA()[pri:0, instance:script.TestDemo@42e26948] output=Data:username]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Test:testAis failed @photo is./photo/Thu Sep 27 15_40_10 IST 2018.png]]>
+              <![CDATA[Test:testAis failed @photo is./photo/Sat Sep 29 10_53_13 IST 2018.png]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- script.TestDemo -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

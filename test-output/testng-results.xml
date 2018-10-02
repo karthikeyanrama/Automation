@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
     <line>
       <![CDATA[Data:username]]>
@@ -8,15 +8,27 @@
       <![CDATA[Row1]]>
     </line>
     <line>
-      <![CDATA[Test:testAis failed @photo is./photo/Sat Sep 29 10_53_13 IST 2018.png]]>
+      <![CDATA[Test:testAis failed @photo is./photo/Mon Oct 01 20_04_13 IST 2018.png]]>
+    </line>
+    <line>
+      <![CDATA[testA]]>
+    </line>
+    <line>
+      <![CDATA[Test:testAis PASSED]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="65959" started-at="2018-09-29T05:22:08Z" finished-at="2018-09-29T05:23:14Z">
+  <suite name="Suite" duration-ms="265597" started-at="2018-10-01T14:31:45Z" finished-at="2018-10-01T14:36:10Z">
     <groups>
+      <group name="smoke">
+        <method signature="TestDemo2.testA()[pri:1, instance:script.TestDemo2@343f4d3d]" name="testA" class="script.TestDemo2"/>
+      </group> <!-- smoke -->
+      <group name="login">
+        <method signature="TestDemo2.testA()[pri:1, instance:script.TestDemo2@343f4d3d]" name="testA" class="script.TestDemo2"/>
+      </group> <!-- login -->
     </groups>
-    <test name="Default test" duration-ms="65959" started-at="2018-09-29T05:22:08Z" finished-at="2018-09-29T05:23:14Z">
+    <test name="Test" duration-ms="265597" started-at="2018-10-01T14:31:45Z" finished-at="2018-10-01T14:36:10Z">
       <class name="script.TestDemo">
-        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.TestDemo@42e26948]" name="openApplication" is-config="true" duration-ms="58898" started-at="2018-09-29T05:22:08Z" finished-at="2018-09-29T05:23:07Z">
+        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.TestDemo@57baeedf]" name="openApplication" is-config="true" duration-ms="134007" started-at="2018-10-01T14:31:45Z" finished-at="2018-10-01T14:33:59Z">
           <params>
             <param index="0">
               <value>
@@ -32,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method status="FAIL" signature="testA()[pri:0, instance:script.TestDemo@42e26948]" name="testA" duration-ms="5655" started-at="2018-09-29T05:23:07Z" finished-at="2018-09-29T05:23:13Z">
+        <test-method status="FAIL" signature="testA()[pri:0, instance:script.TestDemo@57baeedf]" name="testA" duration-ms="13594" started-at="2018-10-01T14:33:59Z" finished-at="2018-10-01T14:34:12Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -79,21 +91,60 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- testA -->
-        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.TestDemo@42e26948]" name="closeApplication" is-config="true" duration-ms="1297" started-at="2018-09-29T05:23:13Z" finished-at="2018-09-29T05:23:14Z">
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.TestDemo@57baeedf]" name="closeApplication" is-config="true" duration-ms="4834" started-at="2018-10-01T14:34:13Z" finished-at="2018-10-01T14:34:17Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testA status=FAILURE method=TestDemo.testA()[pri:0, instance:script.TestDemo@42e26948] output=Data:username]]]>
+                <![CDATA[[TestResult name=testA status=FAILURE method=TestDemo.testA()[pri:0, instance:script.TestDemo@57baeedf] output=Data:username]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Test:testAis failed @photo is./photo/Sat Sep 29 10_53_13 IST 2018.png]]>
+              <![CDATA[Test:testAis failed @photo is./photo/Mon Oct 01 20_04_13 IST 2018.png]]>
             </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- script.TestDemo -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="script.TestDemo2">
+        <test-method status="PASS" signature="openApplication(java.lang.String, java.lang.String)[pri:0, instance:script.TestDemo2@343f4d3d]" name="openApplication" is-config="true" duration-ms="84439" started-at="2018-10-01T14:34:18Z" finished-at="2018-10-01T14:35:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method status="PASS" signature="testA()[pri:1, instance:script.TestDemo2@343f4d3d]" name="testA" duration-ms="25506" started-at="2018-10-01T14:35:42Z" finished-at="2018-10-01T14:36:08Z">
+          <reporter-output>
+            <line>
+              <![CDATA[testA]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method status="PASS" signature="closeApplication(org.testng.ITestResult)[pri:0, instance:script.TestDemo2@343f4d3d]" name="closeApplication" is-config="true" duration-ms="2482" started-at="2018-10-01T14:36:08Z" finished-at="2018-10-01T14:36:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testA status=SUCCESS method=TestDemo2.testA()[pri:1, instance:script.TestDemo2@343f4d3d] output=testA]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test:testAis PASSED]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- script.TestDemo2 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

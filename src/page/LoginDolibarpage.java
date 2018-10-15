@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginDolibar {
+public class LoginDolibarpage {
 	private WebDriver driver;
 	@FindBy(id="username")
 	private WebElement unTB;
@@ -13,7 +13,7 @@ public class LoginDolibar {
 	private WebElement unPW;
 	@FindBy(xpath="//input[@type=\"submit\"]")
 	private WebElement loginBTN;
-	public LoginDolibar(WebDriver driver) {	
+	public LoginDolibarpage(WebDriver driver) {	
 		this.driver=driver;//initialization
 		PageFactory.initElements(driver, this);
 	}

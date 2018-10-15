@@ -8,7 +8,7 @@ import generic.BaseTest;
 import generic.Utility;
 import generic.WebGeneric;
 import page.Dolibarpage;
-import page.LoginDolibar;
+import page.LoginDolibarpage;
 
 public class DolibarTc extends BaseTest {
 	@Test(priority=1,groups= {"smoke"})
@@ -21,7 +21,7 @@ public class DolibarTc extends BaseTest {
 		Reporter.log("testA",true);
 		//ENTER VALID USERNAME& PASSWORD
 		
-		LoginDolibar l1 = new LoginDolibar(driver);
+		LoginDolibarpage l1 = new LoginDolibarpage(driver);
 		l1.set_unTB(un);
 		l1.set_unPw(pw);
 		l1.clickLogin();

@@ -5,15 +5,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Loginpage  {
+public class LoginDolibar {
 	private WebDriver driver;
-	@FindBy(xpath="//input[@name='username']")
+	@FindBy(id="username")
 	private WebElement unTB;
-	@FindBy(xpath="//input[@name='pwd']")
+	@FindBy(id="password")
 	private WebElement unPW;
-	@FindBy(xpath="//div[text()='Login ']")
+	@FindBy(xpath="//input[@type=\"submit\"]")
 	private WebElement loginBTN;
-	public Loginpage(WebDriver driver) {	
+	public LoginDolibar(WebDriver driver) {	
 		this.driver=driver;//initialization
 		PageFactory.initElements(driver, this);
 	}
@@ -30,6 +30,7 @@ public class Loginpage  {
 		loginBTN.click();
 					
 	
+
 
 
 }

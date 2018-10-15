@@ -15,8 +15,10 @@ import org.testng.annotations.Parameters;
 public  abstract class BaseTest implements IAutoConst{
 	public  WebDriver driver;
 	public String url=Utility.getPropertyValue(CONFIG_PATH, "URL");
-	String ITO=Utility.getPropertyValue(CONFIG_PATH, "ITO");
-	public long duration=Long.parseLong(ITO);
+	String strITO=Utility.getPropertyValue(CONFIG_PATH, "ITO");
+	public long lngITO=Long.parseLong(strITO);
+	public String strETO =Utility.getPropertyValue(CONFIG_PATH, "ETO");
+	public long lngETO=Long.parseLong(strETO);
 		static {
 		System.setProperty(key, value);
 	}
@@ -24,7 +26,7 @@ public  abstract class BaseTest implements IAutoConst{
 	@BeforeMethod(alwaysRun=true)
 	public void openApplication(@Optional("localhost")String ip,@Optional("chrome")String browser) {
 		driver=Utility.openBrowser(driver, "localhost", "chrome");
-		driver.manage().timeouts().implicitlyWait(duration, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(lngITO, TimeUnit.SECONDS);
 		driver.get(url);
 	}
 	@AfterMethod(alwaysRun=true)
